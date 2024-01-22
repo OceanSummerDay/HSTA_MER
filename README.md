@@ -84,7 +84,7 @@ nohup python K_folds_finetuning.py \
 --no_noise \
 --model_header_mode 2 >> "YOUR PATH"${script_name}.txt 2>&1 &
 
-
+  ```
 
 
 ### Note:
