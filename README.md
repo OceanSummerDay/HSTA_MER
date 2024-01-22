@@ -83,3 +83,14 @@ nohup python K_folds_finetuning.py \
 --layer_decay 0.90 \
 --no_noise \
 --model_header_mode 2 >> "YOUR PATH"${script_name}.txt 2>&1 &
+
+
+
+
+### Note:
+
+- Here we show the 5-fold cross-validation method, script and code on casme3. For other data sets and LOSO, you can refer to this link (https://github.com/davidnvq/me_recognition)  to modify the train function implementation.
+- The path in the code needs to be modified to the path of your local file.
+- Here total batch size = (`batch_size` per gpu) x `nodes` x (gpus per node).
+- `lr` here is the base learning rate. The ` actual lr` is computed by the [linear scaling rule](https://arxiv.org/abs/1706.02677): `` actual lr`` = `lr` * total batch size / 256.
+- When performing LOSO cross-validation, it is recommended to run multiple cards in parallel, use one script to start the execution of other scripts, and finally merge all results.
