@@ -51,7 +51,6 @@ nohup python K_folds_finetuning.py \
 --model cross_uni_hsta_base_224 \
 --num_frames 6 \
 --fill_by_zeros_or_img img \
---not_put_apex_at_last_for_mae \
 --no_save_ckpt \
 --use_emothion_or_objective_class_as_label objective_class \
 --use_weight_loss False \
@@ -74,10 +73,8 @@ nohup python K_folds_finetuning.py \
 --weight_decay 0.05 \
 --sh_name ${script_name} \
 --epochs ${epochs} \
---test_num_segment 2 \
---test_num_crop 3 \
 --prefetch_generator \
---fc_drop_rate 0.4 \
+--fc_drop_rate 0.2 \
 --drop 0.2 \
 --drop_path 0.2 \
 --layer_decay 0.90 \
