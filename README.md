@@ -1,10 +1,9 @@
 # HSTA_MER
 Hierarchical Space-Time Attention for Micro-Expression Recognition in PyTorch
-![Alt text](happy.png "Optional title")
-![Alt text](sad.png "Optional title")
+![Alt text](./hsta_model_core/example/fear.png "Optional title")
+![Alt text](./hsta_model_core/example/anger.png "Optional title")
 The codebase is mainly built with following libraries:
-
-Python 3.6 or higher
+you can refer here (https://github.com/OceanSummerDay/HSTA_MER/tree/main/hsta_model_core/example) for more Estimated results.
 
 PyTorch and torchvision.
 We can successfully reproduce the main results under two settings below:
