@@ -1,3 +1,5 @@
+*Last updated: April 1, 2025 <br/>I am very upset that my work has not been accepted. I apologize for some mistakes in datasets.py (other_dataset.py is missing). I will correct it after the paper is accepted. *
+
 # HSTA_MER
 Hierarchical Space-Time Attention for Micro-Expression Recognition in PyTorch
 ![Alt text](./hsta_model_core/example/fear.png "Optional title")
